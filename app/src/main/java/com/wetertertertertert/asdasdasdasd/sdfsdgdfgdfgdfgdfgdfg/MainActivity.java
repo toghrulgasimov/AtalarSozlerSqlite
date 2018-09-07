@@ -28,10 +28,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         //Admob Banner
+
         MobileAds.initialize(this, "ca-app-pub-9026840340673035~9445396711");
         mAdView = findViewById(R.id.adView);
         AdRequest adRequest = new AdRequest.Builder().build();
         mAdView.loadAd(adRequest);
+
         final ListView L = (ListView)findViewById(R.id.L);
         final EditText T = (EditText)findViewById(R.id.T);
         LinearLayout Layout = (LinearLayout)findViewById(R.id.keys);

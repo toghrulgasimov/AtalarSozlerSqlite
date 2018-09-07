@@ -9,7 +9,8 @@
 
     <LinearLayout
         android:layout_width="298dp"
-        android:layout_height="548dp"
+        android:layout_height="458dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginEnd="4dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="4dp"
@@ -17,28 +18,34 @@
         android:layout_marginTop="8dp"
         android:background="@android:color/holo_orange_light"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.594"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.gms.ads.AdView
             android:id="@+id/adView"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
             app:adSize="BANNER"
-            app:adUnitId="ca-app-pub-9026840340673035/4758796804"></com.google.android.gms.ads.AdView>
+            app:adUnitId="ca-app-pub-9026840340673035/4758796804"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></com.google.android.gms.ads.AdView>
 
         <EditText
             android:id="@+id/T"
             android:layout_width="match_parent"
             android:layout_height="77dp"
+            android:backgroundTint="@android:color/black"
             android:ems="10"
             android:hint="Axtar"
-            android:backgroundTint="@android:color/black"
-            android:textCursorDrawable="@drawable/black_cursor"
             android:inputType="textPersonName"
+            android:textCursorDrawable="@drawable/black_cursor"
             android:textSize="22sp"
             tools:layout_editor_absoluteX="31dp"
             tools:layout_editor_absoluteY="0dp" />
@@ -89,8 +96,8 @@
             <Button
                 android:id="@+id/button11"
                 android:layout_width="match_parent"
-                android:layout_marginRight="3dp"
                 android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
                 android:layout_weight="1"
                 android:background="@android:color/holo_orange_dark"
                 android:text="Ö" />
@@ -108,8 +115,8 @@
                 android:id="@+id/button20"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_marginRight="3dp"
+                android:layout_weight="1"
                 android:background="@android:color/holo_orange_dark"
                 android:text="Ğ" />
 

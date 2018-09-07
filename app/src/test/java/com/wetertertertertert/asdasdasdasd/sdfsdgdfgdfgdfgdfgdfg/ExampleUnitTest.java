@@ -1,4 +1,4 @@
-package com.zeylik.gasimov.learnsql;
+package com.wetertertertertert.asdasdasdasd.sdfsdgdfgdfgdfgdfgdfg;
 
 import org.junit.Test;
 

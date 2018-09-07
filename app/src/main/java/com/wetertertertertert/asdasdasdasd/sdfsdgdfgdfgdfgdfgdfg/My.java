@@ -1,4 +1,4 @@
-package com.zeylik.gasimov.learnsql;
+package com.wetertertertertert.asdasdasdasd.sdfsdgdfgdfgdfgdfgdfg;
 
 import android.content.Context;
 import android.database.Cursor;
@@ -27,6 +27,7 @@ public class My extends SQLiteAssetHelper {
 
         qb.setTables(sqlTables);
         String Q = "soz like '%"+s+"%'";
+
         Cursor c = qb.query(db, sqlSelect, Q, null,
                 null, null, "esl");
 

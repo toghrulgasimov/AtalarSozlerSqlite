@@ -1,4 +1,4 @@
-package com.zeylik.gasimov.learnsql;
+package com.wetertertertertert.asdasdasdasd.sdfsdgdfgdfgdfgdfgdfg;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

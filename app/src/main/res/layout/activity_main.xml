@@ -4,19 +4,31 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="298dp"
-        android:layout_height="589dp"
+        android:layout_height="548dp"
         android:layout_marginEnd="4dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="4dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@android:color/holo_orange_light"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="0dp">
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.google.android.gms.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            app:adSize="BANNER"
+            app:adUnitId="ca-app-pub-9026840340673035/4758796804"></com.google.android.gms.ads.AdView>
 
         <EditText
             android:id="@+id/T"
@@ -24,10 +36,91 @@
             android:layout_height="77dp"
             android:ems="10"
             android:hint="Axtar"
+            android:backgroundTint="@android:color/black"
+            android:textCursorDrawable="@drawable/black_cursor"
             android:inputType="textPersonName"
             android:textSize="22sp"
             tools:layout_editor_absoluteX="31dp"
             tools:layout_editor_absoluteY="0dp" />
+
+        <LinearLayout
+            android:id="@+id/keys"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="0dp">
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_dark"
+                android:text="Ə" />
+
+            <Button
+                android:id="@+id/button14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_dark"
+                android:text="Ü" />
+
+            <Button
+                android:id="@+id/button13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_dark"
+                android:text="Ş" />
+
+            <Button
+                android:id="@+id/button12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_dark"
+                android:text="Ç" />
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="match_parent"
+                android:layout_marginRight="3dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_dark"
+                android:text="Ö" />
+
+            <Button
+                android:id="@+id/button10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_dark"
+                android:text="Ə" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="3dp"
+                android:background="@android:color/holo_orange_dark"
+                android:text="Ğ" />
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@android:color/holo_orange_dark"
+                android:text="ı" />
+        </LinearLayout>
 
         <ListView
             android:id="@+id/L"
